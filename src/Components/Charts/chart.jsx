@@ -8,7 +8,7 @@ function Chart() {
   let [responseData, setResponseData] = useState([]);
 
   useEffect(()=>{
-    Axios.get('http://localhost:3000/orderbydate')
+    Axios.get('https://londry-backend.herokuapp.com/orderbydate')
     .then(response=>{
         if(response.data.success){
           setResponseData(response.data.order)

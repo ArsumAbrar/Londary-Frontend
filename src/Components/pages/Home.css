@@ -6,3 +6,7 @@
     font-display:inherit;
 
 }
+.home_card{
+    display: flex;
+    flex-direction: row;
+}

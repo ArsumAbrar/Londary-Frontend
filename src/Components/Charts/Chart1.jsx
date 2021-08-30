@@ -7,7 +7,7 @@ function Chart1() {
   let [responseData, setResponseData] = useState([]);
 
   useEffect(()=>{
-    Axios.get('http://localhost:3000/custbydate')
+    Axios.get('https://londry-backend.herokuapp.com/custbydate')
     .then(response=>{
         if(response.data.success){
           setResponseData(response.data.customer)

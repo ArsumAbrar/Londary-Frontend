@@ -24,7 +24,7 @@ function CostumerChart() {
   var x;
 
   useEffect(()=>{
-    Axios.get('http://localhost:3000/loc')
+    Axios.get('https://londry-backend.herokuapp.com/loc')
     .then(response=>{
         if(response.data.success){
           setResponseData(response.data.location)
